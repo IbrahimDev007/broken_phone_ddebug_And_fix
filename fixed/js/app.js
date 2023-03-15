@@ -84,6 +84,9 @@ const toggleSpinner = isLoading => {
 
 // not the best way to load show All
 document.getElementById('btn-show-all').addEventListener('click', function(){
+    
+    const showAll_btn = document.getElementById('btn-show-all'); 
+    showAll_btn.classList.toggle('d-none');
     processSearch();
 })
 
@@ -108,4 +111,4 @@ const displayPhoneDetails = phone =>{
     `
 }
 
-loadPhones('apple');
+// loadPhones('apple');
